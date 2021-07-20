@@ -1,4 +1,4 @@
-# © TamilBots 2021-22
+# © Anysongdlbot 2021-22
 
 from pyrogram import Client, filters
 from pyrogram.types import (
@@ -88,7 +88,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐀 𝐒𝐨𝐧𝐠 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬 [🚀](https://telegra.ph/file/67f41ae52a85dfc0551ae.mp4)")
+    m.edit("🔎 𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐀 𝐒𝐨𝐧𝐠 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬 [🚀](https://telegra.ph/file/abdb5a244fedea3e59409.jpg)")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -102,7 +102,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('❌ 𝐄𝐫𝐫𝐨𝐫\n\n Report This Erorr To Fix @TamilSupport ❤️')
+        m.edit('❌ 𝐄𝐫𝐫𝐨𝐫\n\n Report This Erorr To Fix : [𝗧𝗵𝗮𝗿𝗮𝗺𝗮𝗮𝗻𝗮𝗔𝗱𝗺𝗶𝗻 ](https://telegram.me/tharamaanaadmin) 😎')
         print(e)
     try:
         os.remove(audio_file)
